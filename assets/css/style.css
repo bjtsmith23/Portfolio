@@ -36,7 +36,7 @@ nav li a {
   text-decoration: none;
 }
 
-/* keyboard images */
+/* keyboard images under navbar*/
 .banner {
   margin-top: -15px;
   border: 5px solid cyan;
@@ -50,19 +50,49 @@ nav li a {
   height: 150px;
 }
 
-main {
+h2 {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
+  border: 3px solid cyan;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 20px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+}
+
+.aboutme { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.works {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-h2 {
-  position: center;
-  border: 3px solid cyan;
+p {
+  width: 40%;
+  background-color: cyan;
+  border: 7px solid cyan;
   border-radius: 20px;
-  width: 20%;
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   body {
@@ -92,3 +122,17 @@ h2 {
       border: none;
   }
 }
+
+@media screen and (max-width: 721px) {
+
+  .works {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
