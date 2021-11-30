@@ -1,135 +1,85 @@
 body {
-  background-color: blue;
+  background-color: aqua;
+  
 }
 
 header {
-  background-color: blue;
+  height: 50px;
+  background-color: rgb(61, 51, 204);
 }
 
-h1 {
-  color: black;
-  margin-left: 10px;
-  font-size: 50px;
-}
-
-nav {
-  background-color: cornflowerblue;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-ul {
+ /* #buttons {
   display: flex;
   justify-content: right;
-}
-
-nav li {
-  padding: 10px;
+  align-items: flex-end;
   list-style: none;
+  text-decoration: none;
+}  */
+
+button {
+  margin: 3px;
 }
 
-nav li a {
-  padding: 3px;
-  border: 4px solid black;
-  border-radius: 20px;
+
+button a{
+  font-weight: bolder;
   color: white;
   text-decoration: none;
 }
 
-/* keyboard images under navbar*/
-.banner {
-  margin-top: -15px;
-  border: 5px solid cyan;
-  display: flex;
-  justify-content: flex-start;
-  height: 150px;
-}
-
-#keyboard {
-  width: 25%;
-  height: 150px;
-}
-
-h2 {
+.aboutme {
   display: flex;
   justify-content: center;
-  border: 3px solid cyan;
-  margin-left: 40%;
-  margin-right: 40%;
-  border-radius: 20px;
-}
-
-#contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: white;
-}
-
-.aboutme { 
-  display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.works {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 p {
-  width: 40%;
-  background-color: cyan;
-  border: 7px solid cyan;
-  border-radius: 20px;
+  background-color: violet;
+  width: 50%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#hw {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 
+.feet {
+  margin: 5px;
+}
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
-
   nav {
-    text-align: center;
-    
-  }
-
-  ul { 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-  }
-
-  li {
-      display: flex;
-      justify-content: center;
-      margin-left: -35px;
-      margin-right: 5px;
-      border: 3px solid gray;
-  }
- nav li a {
-      width: 25%;
-      border: none;
-  }
-}
-
-@media screen and (max-width: 721px) {
-
-  .works {
-    display: flex;
     flex-direction: column;
   }
 
-  #contact {
-    display: flex;
-    flex-direction: column;
+  button {
+    width: 100%;
+    margin: 0px;
   }
 }
-

@@ -5,40 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brian Smith Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     <link rel="stylesheet" href="./assets/css/style.css" />
+  
   </head>
   <body>
     <header>
       <h1><strong>Brian Smith</strong></h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#AboutMe">AboutMe</a>
-          </li>
-          <li>
-            <a href="#MyWorks">My Works</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <div class="banner">
-      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
-      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
-      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
-      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
+
+    <div class="d-grid gap-2 d-md-block" id="buttons">
+      <button class="btn btn-primary" type="button"><a href="#AboutMe">About Me</a></button>
+      <button class="btn btn-primary" type="button"><a href="#MyWorks">My Works</a></button>
+      <button class="btn btn-primary" type="button"><a href="#contact">Contact</a></button>
     </div>
+     
+    
+    <!-- <div class="banner">
+      <p></p>
+      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
+      <img src="./assets/images/keyboard.jpeg" id="keyboard" />
+      <img src="./assets/images/keyboard.jpeg" id="keyboard" /> -->
+    <!-- </div> --> 
 
-
-    <main>>
-        
-        <h2 id="AboutMe">About Me</h2>
-        <div class="aboutme">
+       <div class="aboutme">
+          <h2 id="AboutMe">About Me</h2>
           <Figure><img
             src="./assets/images/me.jfif"
-            alt="A picture of me surfing"/>
+            alt="A picture of me smiling"/>
           </Figure>
             <p>
             I am from Little Silver New Jersey and I am looking to become a
@@ -47,49 +41,83 @@
           </p>
         </div>
       
+
+
         <h2 id="MyWorks">My Works</h2>
-        <div class="works">
-          <div>
-            <figure>
-              <a href="https://bjtsmith23.github.io/Code-Quiz/">
-                <img class="refactor" src="assets/images/CodeQuiz.png">
-              </a>
-              <figcaption>Code Quiz</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <a href="https://bjtsmith23.github.io/Refactor/">
-                <img class="refactor" src="./assets/images/refactor.png.png">
-              </a>
-              <figcaption>My Refactored Website (Click to View)</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <a href="https://bjtsmith23.github.io/Work-Day-Scheduler/">
-                <img class="refactor" src="./assets/images/Work Day Scheduler.png">
-              </a>
-              <figcaption>Link to Future Project #2</figcaption>
-            </figure>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <figure class="hw" id="Code">
+                <a href="https://bjtsmith23.github.io/Code-Quiz/">
+                  <img class="refactor" src="assets/images/CodeQuiz.png">
+                </a>
+                <figcaption>Code Quiz</figcaption>
+              </figure>
+            </div>
+            <div class="col">
+              <figure class="hw" id="Refactor">
+                <a href="https://bjtsmith23.github.io/Refactor/">
+                  <img class="refactor" src="./assets/images/refactor.png.png">
+                </a>
+                <figcaption>My Refactored Website (Click to View)</figcaption>
+              </figure>
+              </div>
+            <div class="col">
+              <figure class="hw" id="Workday">
+                <a href="https://bjtsmith23.github.io/Work-Day-Scheduler/">
+                  <img class="refactor" src="./assets/images/Work Day Scheduler.png">
+                </a>
+                <figcaption>Work Day Scheduler</figcaption>
+              </figure> 
+            </div>
           </div>
         </div>
-    </main>
 
+
+
+
+        
+        
+        <!-- <div class="row">
+                <figure class="hw" id="Code">
+                  <a href="https://bjtsmith23.github.io/Code-Quiz/">
+                    <img class="refactor" src="assets/images/CodeQuiz.png">
+                  </a>
+                  <figcaption>Code Quiz</figcaption>
+                </figure>
+                <figure class="hw" id="Refactor">
+                  <a href="https://bjtsmith23.github.io/Refactor/">
+                    <img class="refactor" src="./assets/images/refactor.png.png">
+                  </a>
+                  <figcaption>My Refactored Website (Click to View)</figcaption>
+                </figure>
+                <figure class="hw" id="Workday">
+                  <a href="https://bjtsmith23.github.io/Work-Day-Scheduler/">
+                    <img class="refactor" src="./assets/images/Work Day Scheduler.png">
+                  </a>
+                  <figcaption>Work Day Scheduler</figcaption>
+                </figure>
+          </div> -->
+
+
+          
     <footer id="contact">
-      <figure>
+      <figure class="feet">
         <a href="https://www.linkedin.com/in/brian-smith-092509103/"
           ><img src="./assets/images/linkedin.jfif" target="_blank"
         /></a>
         <figcaption>My Linkedin</figcaption>
       </figure>
 
-      <figure>
+      <figure class="feet">
         <a href="https://github.com/bjtsmith23"
           ><img src="./assets/images/github.png" target="_blank"
         /></a>
         <figcaption>My Github</figcaption>
       </figure>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
 </html>
