@@ -2,6 +2,11 @@ body {
   background-color: aqua;
 }
 
+h1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+}
+
 header {
   margin-top: 5px;
   height: 60px;
@@ -35,11 +40,15 @@ button a {
   padding: 5px;
   align-items: center;
   text-align: center;  
+  box-shadow: 5px 10px black;
 }
 
+.pic {
+  margin-top: 30px;
+}
 .work {
-  width: 100px;
-  margin-top: 35px;
+  width: 200px;
+  margin-top: 80px;
   align-items: center;
   text-align: center;
   font-size: 25px;
@@ -47,6 +56,13 @@ button a {
   border: 4px solid powderblue;
   border-radius: 15px;
   padding: 5px;
+  box-shadow: 5px 10px black;
+  
+}
+
+h2 {
+  font-size: 15px;
+  text-align: center;
 }
 
 .aboutme {
@@ -61,11 +77,12 @@ button a {
 
 p {
   padding: 5px;
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: powderblue;
   width: 50%;
   border: 5px solid powderblue;
   border-radius: 18px;
+  border: 4px solid rgb(95, 171, 243);
 }
 
 figcaption {
@@ -77,6 +94,7 @@ figcaption {
 }
 
 .Works {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -86,6 +104,7 @@ figcaption {
 
 Figure {
   margin-top: 30px;
+  border: 8px outset rgb(95, 171, 243);
 }
 
 
@@ -94,6 +113,7 @@ Figure {
 }
 
 footer {
+  margin-top: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +128,7 @@ footer {
   }
 
   .Works {
+    background-color:aquamarine;
     display: flex;
     flex-direction: row;
     justify-content: center;
