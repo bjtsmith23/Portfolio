@@ -87,6 +87,7 @@ p {
 
 figcaption {
   text-align: center;
+  font-weight: bolder;
 }
 
 .figcaption {
@@ -96,15 +97,16 @@ figcaption {
 .Works {
   margin-top: 40px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
 
-Figure {
+img {
   margin-top: 30px;
   border: 8px outset rgb(95, 171, 243);
+  border-radius: 20px;
 }
 
 
@@ -113,7 +115,7 @@ Figure {
 }
 
 footer {
-  margin-top: 500px;
+  margin-top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,9 +130,7 @@ footer {
   }
 
   .Works {
-    background-color:aquamarine;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-direction: column;
   }
